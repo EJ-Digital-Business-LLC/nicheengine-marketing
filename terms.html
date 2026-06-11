@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | The Niche Engine</title>
+    <style>
+        :root {
+            --brand-primary: #FF8C00;
+            --ink-dark: #0f172a;
+            --paper: #f8fafc;
+        }
+        body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; color: #333; background-color: #fff; margin: 0; padding: 0; }
+        
+        /* 🚀 THE STERILE NAVIGATION HEADER */
+        .legal-nav {
+            background-color: var(--ink-dark);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid var(--brand-primary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .legal-nav a {
+            color: var(--paper);
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+            transition: color 0.2s ease;
+        }
+        .legal-nav a:hover { color: var(--brand-primary); }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a.active { color: var(--brand-primary); pointer-events: none; }
+        .back-btn {
+            background: transparent;
+            border: 2px solid var(--paper);
+            color: var(--paper);
+            padding: 5px 15px;
+            border-radius: 4px;
+        }
+        .back-btn:hover { background: var(--paper); color: var(--ink-dark); border-color: var(--paper); }
+
+        .content-container { padding: 40px 20px; max-width: 800px; margin: 0 auto; }
+        h1, h2 { color: #0f172a; font-weight: 900; letter-spacing: -0.5px; }
+        .date-stamp { font-size: 0.9rem; color: #666; font-weight: bold; margin-bottom: 30px; }
+        .section { margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+    <nav class="legal-nav">
+        <div style="display: flex; align-items: center; gap: 20px;">
+             <a href="/" style="font-size: 1.2rem; font-weight: 900; font-family: 'JetBrains Mono', monospace; text-decoration: none; color: var(--paper); letter-spacing: -0.5px;">
+                 <span style="opacity: 0.5; font-weight: 400;">The</span><span style="color: var(--brand-primary);">Niche</span>Engine
+             </a>
+        </div>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <a href="/" class="back-btn">&#8592; Return Home</a>
+            <div class="nav-links">
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html" class="active">Terms of Service</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <h1>Terms of Service</h1>
+        <div class="date-stamp">Effective Date: June 11, 2026</div>
+
+        <div class="section">
+            <h2>1. Platform Licensing & Operations</h2>
+            <p>Welcome to The Niche Engine, a proprietary B2B software platform represented and operated by EJ Digital Business LLC. By accessing our programmatic dashboard, you acknowledge that you are purchasing a revocable, non-exclusive license to utilize our secure routing telemetry. You are explicitly not purchasing the underlying software or source code.</p>
+        </div>
+
+        <div class="section">
+            <h2>2. Absolute Liability Severance</h2>
+            <p>EJ Digital Business LLC provides the software infrastructure. To the maximum extent permitted by law, EJ Digital Business LLC bears absolute zero liability for disputes, property damage, substandard workmanship, or customer experience issues arising from your use of the platform. Furthermore, EJ Digital Business LLC makes no representations or guarantees regarding the conversion rate, closing ratio, or ultimate financial success of any project requests obtained through the platform.</p>
+        </div>
+
+        <div class="section">
+            <h2>3. Automated Telemetry & Consent</h2>
+            <p>By registering on the platform, you authorize our automated systems to contact you via phone call, SMS text message, or email regarding your account. Standard message and data rates may apply. You may opt out of automated SMS transmission at any time by replying <strong>STOP</strong>.</p>
+        </div>
+    </div>
+</body>
+</html>

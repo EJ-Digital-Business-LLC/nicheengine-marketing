@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Niche Engine | EJ Digital Business LLC</title>
+    <style>
+        :root {
+            --brand-primary: #FF8C00;
+            --ink-dark: #0f172a;
+            --ink-light: #64748b;
+            --paper: #f8fafc;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--ink-dark);
+            color: var(--paper);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 650px;
+            padding: 40px 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+            color: var(--paper);
+        }
+        .status-badge {
+            display: inline-block;
+            background-color: color-mix(in srgb, var(--brand-primary) 15%, transparent);
+            color: var(--brand-primary);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border: 1px solid color-mix(in srgb, var(--brand-primary) 50%, transparent);
+            margin-bottom: 1.5rem;
+        }
+        p.description {
+            font-size: 1.15rem;
+            color: #cbd5e1;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+        .footer {
+            margin-top: auto;
+            padding: 30px 20px;
+            width: 100%;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.9rem;
+            color: var(--ink-light);
+            background-color: rgba(0,0,0,0.2);
+        }
+        .footer a {
+            color: var(--paper);
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 15px;
+            transition: color 0.2s;
+        }
+        .footer a:hover {
+            color: var(--brand-primary);
+        }
+        .legal-entity {
+            margin-top: 15px;
+            font-size: 0.75rem;
+            opacity: 0.6;
+            letter-spacing: 0.5px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="status-badge">System Status: Closed Beta</div>
+        <h1>The Niche Engine</h1>
+        <p class="description">
+            A proprietary B2B project routing and secure communications platform. Access to the digital matrix is currently restricted to authorized partners and active contractors.
+        </p>
+    </div>
+
+    <footer class="footer">
+        <div>
+            <a href="/privacy.html">Privacy Policy</a>
+            <span style="opacity: 0.3;">|</span> 
+            <a href="/terms.html">Terms of Service</a>
+        </div>
+        <div class="legal-entity">
+            &copy; 2026 EJ Digital Business LLC. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
