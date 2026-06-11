@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Sector Not Found</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-primary: #FF8C00; /* Niche Engine Orange */
+            --paper-sheet: #f8fafc;
+            --ink-dark: #0f172a;
+            --template-dark-bg: #111111;
+            --template-dark-text: #ffffff;
+        }
+        body { 
+            background-color: var(--template-dark-bg); 
+            color: var(--template-dark-text); 
+            font-family: 'Inter', sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+            overflow: hidden;
+        }
+        .brutal-card { 
+            background-color: var(--template-dark-bg); 
+            border: 4px solid var(--ink-dark); 
+            box-shadow: 8px 8px 0px var(--brand-primary); 
+            padding: 4rem 3rem; 
+            border-radius: 4px; 
+            max-width: 500px; 
+            width: 90%; 
+            text-align: center;
+        }
+        .error-code {
+            font-size: 6rem;
+            font-weight: 900;
+            color: var(--brand-primary);
+            line-height: 1;
+            margin: 0 0 10px 0;
+            letter-spacing: -3px;
+        }
+        .error-terminal {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-bottom: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .brutal-btn { 
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 1rem 2rem; 
+            background-color: var(--paper-sheet); 
+            color: var(--ink-dark); 
+            font-weight: 900; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            text-decoration: none; 
+            border: 3px solid var(--paper-sheet); 
+            transition: all 0.2s ease; 
+        }
+        .brutal-btn:hover { 
+            background-color: var(--brand-primary); 
+            border-color: var(--brand-primary); 
+            box-shadow: 4px 4px 0px var(--brand-primary);
+            transform: translate(-2px, -2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="brutal-card">
+        <h1 class="error-code">404</h1>
+        <div class="error-terminal">
+            > CRITICAL ANOMALY DETECTED<br>
+            > SECTOR NOT FOUND IN THIS MATRIX
+        </div>
+        <a href="/" class="brutal-btn">Return</a>
+    </div>
+</body>
+</html>
