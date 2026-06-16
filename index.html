@@ -63,8 +63,6 @@
             margin-bottom: 2rem;
             font-weight: 400;
         }
-
-        /* 🚀 THE FORM MATRIX */
         fieldset {
             background-color: var(--card-bg);
             border: 2px solid var(--card-border);
@@ -143,7 +141,6 @@
             line-height: 1.5;
             margin-top: 10px;
         }
-        
         .footer {
             margin-top: auto;
             padding: 30px 20px;
@@ -170,7 +167,6 @@
             opacity: 0.6;
             letter-spacing: 0.5px;
         }
-
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -234,7 +230,6 @@
     </footer>
 
     <script>
-        // Phone Formatter
         const phoneNode = document.getElementById('phone');
         if (phoneNode) {
             phoneNode.addEventListener('input', function (e) {
@@ -248,7 +243,6 @@
             });
         }
 
-        // Form Submission Logic
         document.getElementById('demoRequestForm').addEventListener('submit', async (e) => {
             e.preventDefault();
 
@@ -261,7 +255,6 @@
             const btn = document.getElementById('submitBtn');
             const msg = document.getElementById('formResponse');
             
-
             const turnstileResponse = document.querySelector('[name="cf-turnstile-response"]')?.value;
             if (!turnstileResponse) {
                 msg.style.display = 'block';
@@ -274,7 +267,6 @@
             }
 
             btn.disabled = true;
-            
             btn.innerHTML = 'PROCESSING...';
             msg.classList.add('hidden');
 
@@ -283,7 +275,8 @@
                 Email: document.getElementById('email').value,
                 Phone: document.getElementById('phone').value,
                 SmsConsent: document.getElementById('smsConsent').checked,
-                PlatformId: "NICHE_ENGINE" 
+                PlatformId: "NICHE_ENGINE",
+                CfTurnstileResponse: turnstileResponse 
             };
 
             try {
